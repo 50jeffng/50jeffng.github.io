@@ -22,9 +22,17 @@ $(document).ready(function () {
     });
 });
 
+let prevWindowWidth = 0;
+
 $(window).resize(function() {
+    // prevent scrolling resizing: https://stackoverflow.com/questions/17711676/navbar-collapses-on-mobile-with-chrome-safari-on-scroll
+    const currentWindowWidth = $(window).width();
+    if(currentWindowWidth  === prevWindowWidth) {
+        return;
+    }
+    prevWindowWidth = currentWindowWidth;
     $('#sidebar').toggleClass('active');
-    if ($(window).width() <= 768) {
+    if (currentWindowWidth <= 768) {
         if (document.getElementById('content').style.marginLeft != '80px'){
             document.getElementById('content').style.marginLeft = '80px';
         }
