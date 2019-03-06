@@ -1,1 +1,311 @@
-Hello World
+<!-- Made by Jeff Ng (50jeffng@gmail.com) -->>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Jeff Ng</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Bootstrap sidenav source: https://bootstrapious.com/p/bootstrap-sidebar -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Jeff Ng</h3>
+                <strong>50</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#about">
+                        <i class="fas fa-id-card"></i>
+                        About
+                    </a>
+                    <a href="#education">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </a>
+                    <a href="#career">
+                        <i class="fas fa-briefcase"></i>
+                        Career
+                    </a>
+                    <a href="#skills">
+                        <i class="fas fa-lightbulb"></i>
+                        Skills
+                    </a>
+                    <a href="#projectsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-folder-open"></i>
+                        Projects
+                    </a>
+                    <ul class="collapse list-unstyled" id="projectsSubmenu">
+                        <li>
+                            <a href="#coursework">Coursework</a>
+                        </li>
+                        <li>
+                            <a href="#personal">Personal</a>
+                        </li>
+                    </ul>
+                    <a href="#contact">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://drive.google.com/uc?export=download&id=1x5H4XhNLvDh5NwZFHlxr-chYktfSRJRX" class="download">
+                        <i class="fas fa-arrow-alt-circle-down"></i>
+                        Download resume
+                    </a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/forms/wj4fMduLCFOs4JVy1" target="_blank" class="feedback">
+                        <i class="fas fa-comment-alt"></i>
+                        Give feedback
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <!-- Top Navbar -->
+            <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/50jeffng" target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://gitlab.com/50jeffng" target="_blank"><i class="fab fa-gitlab"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.linkedin.com/in/50jeffng/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:50jeffng@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Content starts -->
+            <img id="me-img" src="./res/me.png" class="img-responsive mx-auto d-block" alt="image of me">
+            <p class="text-center">That's me</p>
+            <br/>
+            <br/>
+
+            <div id="about" class="jumbotron">
+                <div class="text-center container">
+                    <h1>About</h1>
+                    <div class="hard-line"></div>
+                    <br/>
+                    <h5>
+                        Studying Computer Science, I always fancy solving problems using code.
+                    </h5>
+                    <br/>
+                    <p class="text-dark">
+                        Spending most of my childhood playing games on my family's shared computer, every game gave me the opportunity to become something I wasn't.
+                        A new world, with any character I can be, going on an adventure. I wanted to make these, games that I could share to my friends.
+                        I also liked playing simulation & strategy games particularly, even though I'm not the sharpest tool in the shed, I always liked to solve problems.
+                        <br/>
+                        <br/>
+                        On my last year in my high school, I had to choose an elective class. I chose computing class, which taught me programming, and I never looked back.
+                        When I first coded in Visual Basic, I realised I could do possibly anything by just typing out code to a computer.
+                        <br/>
+                        <br/>
+                        Then from someone who had no direction in what to do after secondary education, I was pumped with enthusiasm. 
+                        <br/>
+                        <br/>
+                        <p class="font-italic text-dark">And I embarked upon a new path of becoming a Computer Scientist.</p>
+                    </p>
+                </div>
+            </div>
+
+            <div id="education" class="line"></div>
+
+            <div class="shadow p-4 mb-4 bg-white">
+                <h1>Education</h1>
+                <h3>Monash University <small>2017 - 2020 (Expected)</small></h3>
+                <h5>Bachelor of Computer Science, <small>Advanced Computer Science</small></h5>
+                <ul>
+                    <li>Minors:<ul>
+                        <li>Computer networks and security (Completed)</li>
+                        <li>Games development (Ongoing)</li>
+                    </ul></li>
+                    <li>Units: Algorithms and Data Structures, Programming Paradigms, Theory of Computation, Object Oriented Design and Implementation, Mobile Application Development, Operating Systems.</li>
+                </ul>
+            </div>
+
+            <div class="line"></div>
+
+            <div id="career" class="jumbotron">
+                <h1>Career</h1>
+                <div class="hard-line"></div>
+                <br/>
+                <h6>Coming <span class="badge badge-secondary">soon</span></h6>
+            </div>
+
+            <div id="skills" class="line"></div>
+            <br/>
+
+            <div class="container">
+                <h1>Skills</h1>
+                <p>All my skills is in a list of lists.</p>          
+                <ul>
+                    <li>Proficient:<ul>
+                        <li>Concepts: Object-orientated Programming, Cyber Security</li>
+                        <li>Design: UML</li>
+                        <li>Operating Systems: Unix/Linux, Windows</li>
+                        <li>Version control: Git</li>
+                        <li>Back-end: Python</li>
+                        <li>Web Development: JavaScript (Typescript, React, Node, Electron)</li>
+                        <li>Web Design: HTML/CSS, Bootstrap (Used in this website !)</li>
+                        <li>Utilities: Linux shell commands, npm, JSON</li>
+                    </ul></li>
+                </ul>
+                <ul>
+                    <li>Familiar:<ul>
+                        <li>Concepts: Dynamic Programming, Declarative Programming</li>
+                        <li>Operating Systems: macOS</li>
+                        <li>Back-end: C, C++, Java, Haskell</li>
+                        <li>Mobile Development: Android Studio (Java/XML/SQLite)</li>
+                    </ul></li>
+                </ul>
+                <ul>
+                    <li>Outside coding:<ul>
+                        <li>Proficient:<ul>
+                            <li>Language: English, Mandarin</li>
+                            <li>Image manipulation: Photoshop</li>
+                        </ul></li>
+                        <li>Familiar:<ul>
+                            <li>Language: Malay</li>
+                            <li>Video editing: Sony Vegas Pro</li>
+                            <li>Sound processing: Audacity</li>
+                            <li>Photography & Journalism: Was in the Editorial club in high school</li>
+                        </ul></li>
+                    </ul></li>
+                </ul>
+            </div>
+
+            <div class="line"></div>
+            <br/>
+
+
+
+            <h1>Projects</h1>
+            <p>I love doing them.</p>
+            <br/>
+            <div id="coursework" class="hard-line"></div>
+            <br/>
+            <h3>Coursework <small>with units</small></h3>
+            <div class="shadow-sm p-4 mb-4 bg-white">
+                <h5>File manager application <small>Operating System</small></h5>
+                <ul>
+                    <li>Coded in C for Linux</li>
+                    <li>First time coding a shell with Graphical User Interface using ioL console system</li>
+                </ul>
+            </div>
+            <div class="shadow-sm p-4 mb-4 bg-white">
+                <h5>Pong <small>Programming Paradigms</small></h5>
+                <ul>
+                    <li>Coded in JavaScript declaratively</li>
+                    <li>Implemented using Observables, with immutable variables</li>
+                    <li>Added soundtrack, realistic physics and menu as bonus content</li>
+                </ul>
+            </div>
+            <br/>
+            <div id="personal" class="hard-line"></div>
+            <br/>
+            <h3>Personal <small>by me</small></h3>
+            <div class="shadow-sm p-4 mb-4 bg-white">
+                <h5>Discord bot <small>A chat bot</small></h5>
+                <ul>
+                    <li>First coded in Python with Discord.py API in 2017</li>
+                    <li>Then refactored it to JavaScript with Discord.js API in 2018</li>
+                    <li>Incorporated asynchronous and event-based functionality for performance</li>
+                    <li>Made for personal use, may update it from time to time</li>
+                </ul>
+            </div>
+            <div class="shadow-sm p-4 mb-4 bg-white">
+                <h5>vclot <small>A super-customisable to-do list (Ongoing)</small></h5>
+                <ul>
+                    <li>It stands for "Very Cool/Customisable List of Things"</li>
+                    <li>Coded in JavaScript with React.js</li>
+                    <li>Developed for cross-platform, using Electron</li>
+                    <li>With virtually anything being customisable in mind</li>
+                </ul>
+            </div>
+            <br/>
+            <div class="hard-line"></div>
+            <br/>
+            <div id="contact" class="jumbotron">
+                <h1>Contact</h1>
+                <p>Or you can click on the top left</p>
+                <br/>
+                <p class="text-dark">
+                    email: 50jeffng@gmail.com
+                    <br/>
+                    linkedIn: https://www.linkedin.com/in/50jeffng/
+                    <br/>
+                    github: https://github.com/50jeffng
+                    <br/>
+                    gitlab: https://gitlab.com/50jeffng
+                </p>
+            </div>
+
+            <blockquote class="blockquote">
+                <p>I like the number 50, because it shows there's no perfection but only improvement.</p>
+                <footer class="blockquote-footer">Me</footer>
+            </blockquote>
+
+            <!-- Footer source: https://getbootstrap.com/docs/3.3/examples/sticky-footer/ -->
+            <footer class="footer">
+                <div class="container text-center">
+                    <!-- Copyright -->
+                    <span class="text-muted">Made by
+                        <a href="https://github.com/50jeffng"> 50jeffng</a>
+                    </span>
+                    <!-- Copyright -->
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- Custom JS -->>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
