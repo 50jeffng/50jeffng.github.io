@@ -1,2 +1,2 @@
-# 50jeffng.github.io
+# 50jeffng.github.io `Deprecated`
 My own website !
